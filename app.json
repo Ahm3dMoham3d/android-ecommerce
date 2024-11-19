@@ -30,7 +30,16 @@
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
-    "plugins": ["expo-router", "expo-localization"],
+    "plugins": [
+      "expo-router",
+      "expo-localization",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "يحتاج التطبيق صلاحيات استخدام الصور او الكاميرا لرفع صورة البانر الخاصة بالمحل"
+        }
+      ]
+    ],
     "experiments": {
       "typedRoutes": true
     }
